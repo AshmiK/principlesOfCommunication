@@ -1,0 +1,689 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:600,800);
+
+/*.blogsections{
+  padding: 40px;
+  padding-top: 30px;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: #333333;
+  background: #fff;
+  width: 20%;
+  border-radius: 10px;
+}*/
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+    padding: 10px 12px 10px 18px;
+    text-decoration: none;
+    font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Main content*/
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    /*margin-left: 262px; /* Same as the width of the sidenav
+    font-size: 20px; /* Increased text to enable scrolling
+    padding: 0px 10px;*/
+}
+
+/* Add an active class to the active dropdown button
+.active {
+    background-color: #444;
+    color: white;
+}*/
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}*/
+
+.onepage {
+  min-height: 600px; }
+
+.transparent {
+  opacity: 0;
+  z-index: 0; }
+
+.invbtn {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 32px;
+  background-color: #eee;
+  color: #333;
+  padding: 10px 16px 10px 16px; }
+
+
+
+.tagcont {
+  display: block;
+  padding-bottom: 0px;
+  width: 720px;
+  margin: auto; }
+
+
+body {
+  background-image: url("../../assets/img/desktop-footer.png");
+  background-position: bottom;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  margin: 0px; }
+
+.header-home2 {
+  font-weight: 900;
+  z-index: 100;
+  top: 0px;
+  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  left: 0px;
+  right: 0px;
+  padding: 15px;
+  padding-bottom: 2px;
+  line-height: 24px;
+  margin: auto;
+  margin-top: 0px;
+  width: auto;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000; }
+
+.header-fixed p {
+  width: 710px;
+  margin: auto; }
+
+.header-fixed {
+  z-index: 20;
+  position: fixed;
+  box-shadow: 0px 10px 34px 0px rgba(0, 0, 0, 0.1);
+  background: #000;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 15px;
+  margin: auto;
+  width: auto;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333; }
+
+.header-fixed p {
+  color: #fff;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  font-weight: 400;
+  width: 710px;
+  margin: auto; }
+
+.header-fixed a {
+  color: #fff;
+  text-shadow: 0 0 0 #000, .05em .05em 0 #000, 0 0, -.05em .05em 0 #000;
+  /*  gradient background allows us to use css only & re-position it  */
+  background: -webkit-linear-gradient(#eee, #fff) center 1.1em no-repeat;
+  background: linear-gradient(#eee, #fff) center 1.1em no-repeat;
+  /*  can precisely control size in relation to the text  */
+  background-size: 100% 1px;
+  /*  now the underline supports transitions  */
+  -webkit-transition-property: background-size;
+  transition-property: background-size;
+  -webkit-transition: .2s ease;
+  transition: .2s ease; }
+
+.header-fixed a:hover {
+  /*  backgrounds won't size larger than 100%  */
+  background-size: 100% 2px; }
+
+/*.blogcontainer {
+  width: 1060px;
+  left: 262px;
+  position: relative;
+  border-radius: 10px;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  background: #fff;
+/*margin:auto; }*/
+.blogcontainer {
+  width: auto;
+  border-radius: 10px;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  background: #fff;
+  margin:auto; }
+
+.blogcontainer img {
+  margin: auto;
+  border-radius: 4px;
+  margin-top: 32px;
+  width: 720px; }
+
+.blogcontainer video {
+  margin: auto;
+  border-radius: 4px;
+  margin-top: 32px;
+  max-width: 75%; }
+
+
+/*.card img {
+  width: 320px;
+  height: auto;
+  padding-top: 0px;
+  border-radius: 5px 5px 0px 0px; }
+*/
+.txt {
+  width: 220px;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+  padding-top: 4px;
+  margin-bottom: 6px;
+  color: rgba(0, 0, 0, 0.75); }
+
+.blogtitle {
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  padding-top: 90px;
+  margin: auto;
+  max-width: 710px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -.092rem;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2; }
+
+.blogtitle2 {
+  padding-top: 48px;
+  margin: auto;
+  max-width: 710px;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  letter-spacing: -.08rem;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2; }
+
+  .blogtitle3 {
+    padding-top: 32px;
+    margin: auto;
+    max-width: 710px;
+    color: rgba(0, 0, 0, 0.77);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+    letter-spacing: -.08rem;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2; }
+  .blogtitle4 {
+    padding-top: 24px;
+    margin: auto;
+    max-width: 710px;
+    color: rgba(0, 0, 0, 0.66);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+    font-style: italic;
+    letter-spacing: -.08rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2; }
+
+.blogsubtitle {
+  margin: auto;
+  max-width: 710px;
+  margin-top: 4px;
+  color: rgba(0, 0, 0, 0.44);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -.003em; }
+
+.blogtxt {
+  margin: auto;
+  padding-bottom: 32px; }
+
+.blogtxt i {
+  font-family: italic; }
+
+.blogtxt p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  letter-spacing: -0.02rem;
+  color: #555;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: auto;
+  max-width: 710px;
+  padding-top: 16px; }
+
+  .pbold {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Rubik", "Roboto", "Helvetica", sans-serif, bold;
+    letter-spacing: -0.02rem;
+    color: #444;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: auto;
+    max-width: 710px;
+    padding-top: 18px; }
+
+  .blogtxt li{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+    letter-spacing: -0.02rem;
+    color: #555;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: auto;
+    max-width: 710px;
+    padding-top: 8px;
+  }
+  .blogtxt .quoted {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+    letter-spacing: -0.02rem;
+    color: #555;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: auto;
+    max-width: 710px;
+    padding-top: 16px; }
+
+.blogtxt .imgdesc {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  margin: auto;
+  max-width: 640px;
+  padding-top: 8px; }
+
+.blogcontainer a {
+  color: #0000ff; }
+
+.footer {
+  background-image: linear-gradient(-180deg, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  font-weight: 300;
+  width: auto;
+  color: #fff;
+  height: auto;
+  position: relative;
+  bottom: 0;
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  letter-spacing: 0;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px; }
+
+/* Uses https://github.com/IanLunn/Hover */
+.hvr-grow-shadow {
+  background-color: rgba(255, 255, 255, 0.25);
+  display: inline;
+  border: none;
+  margin: 4px;
+  padding: 8px;
+  border-radius: 32px;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  font-weight: 900;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: box-shadow, -webkit-transform;
+  transition-property: box-shadow, -webkit-transform;
+  transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-transform; }
+
+.hvr-grow-shadow:hover,
+.hvr-grow-shadow:active {
+  box-shadow: 0px 3px 34px -4px rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  outline: none; }
+
+.heart {
+  display: inline;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.25); }
+
+.cont {
+  display: inline;
+  margin: 20px;
+  padding: 20px;
+  -ms-flex-line-pack: justify;
+  align-content: space-between; }
+
+.scale75 {
+  -webkit-transform: scale(0.75, 0.75);
+  transform: scale(0.75, 0.75); }
+
+.spaced {
+  margin-top: 110px; }
+
+
+.UItext {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 44px;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.58;
+  letter-spacing: -.003em; }
+
+hr {
+  margin: 100px;
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+  }
+
+/* MOBILE RULES */
+@media only screen and (max-width: 726px) {
+  /* The side navigation menu */
+  .sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: #111; /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+    /* The navigation menu links */
+  .sidenav a , .dropdown-btn{
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-family: "Rubik", "Roboto", "Helvetica", sans-serif;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+  }
+    /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+      color: #f1f1f1;
+  }
+    /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+      transition: margin-left .5s;
+      padding: 20px;
+      margin-left: auto;
+  }
+
+
+ body {
+    background-image: url("../../assets/img/backgyan.jpg");
+    background-color: #F2F1F6;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    margin: 0px; }
+  .hvr-grow-shadow {
+    color: #333333;
+    background-color: #fff; }
+  .zero {
+    color: #000; }
+  .footer {
+    background-image: linear-gradient(-180deg, transparent 0%, #000000 100%);
+    font-size: 16px;
+    position: relative; }
+
+  /*.blogcontainer {
+    width: 100%;
+    margin: auto;
+    left: 0px;
+    position: absolute;
+   }*/
+   .blogcontainer {
+     width: 100%; }
+  .blogcontainer img {
+    width: 100%;
+    margin: auto;
+    border-radius: 0px; }
+  .blogcontainer video {
+    /*width: 100%;*/
+    margin: auto;
+    border-radius: 0px; }
+  .blogtitle {
+    padding-top: 60px;
+    width: 90%;
+    margin: auto; }
+  .blogtitle2 {
+    padding-top: 20px;
+    width: 90%;
+    margin: auto; }
+  .blogtitle3 {
+    padding-top: 18px;
+    width: 90%;
+    margin: auto; }
+  .blogtitle4 {
+    padding-top: 12px;
+    width: 90%;
+    margin: auto; }
+  .blogsubtitle {
+    padding-top: 8px;
+    width: 90%;
+    margin: auto; }
+  .blogtxt {
+    margin: auto;
+    padding-bottom: 20px; }
+  .blogtxt p {
+    margin: auto;
+    width: 90%;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  .blogtxt li {
+    margin: auto;
+    width: 90%;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .blogtxt .quoted {
+    margin: auto;
+    width: 90%;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  .blogtxt .imgdesc {
+    width: auto;
+    padding-top: 0px;
+    margin: 12px; }
+  .scale75 {
+    -webkit-transform: none;
+    transform: none; }
+  .header-fixed {
+    position: relative; }
+  .header-fixed p {
+    width: auto;
+    padding-left: 8px; }
+  .UItext {
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-bottom: 10px; }
+  hr {
+    margin: 30px;
+    margin-top: 36px; }
+  .heart {
+    display: inline;
+    font-size: 12px;
+    color: #e74c3c; }
+  .butt {
+    font-size: 12px;
+    min-width: 80px;
+    padding: 0 22px; }
+  .buttactive {
+    font-size: 12px;
+    min-width: 80px;
+    padding: 0 22px; }
+  .zero {
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s; }
+  .card {
+    width: 90vw;
+    margin: auto;
+    margin-top: 6vw;
+    height: auto; }
+  /*
+.card img{
+  width: 90vw;
+} */
+  .lbox-a {
+    margin: auto;
+    background: #000;
+    border-color: #000; }
+  .lbox-a a {
+    color: #fff; }
+  .cbox-a {
+    background: #000;
+    border-color: #000; }
+  .cbox-a a {
+    color: #fff; }
+  .rbox-a {
+    background: #000;
+    border-color: #000; }
+  .rbox-a a {
+    color: #fff; }
+  .lbox-i {
+    color: #000;
+    border-color: #000; }
+  .cbox-i {
+    color: #000;
+    border-color: #000; }
+  .rbox-i {
+    color: #000;
+    border-color: #000; }
+  .lbox-i a {
+    color: #000; }
+  .cbox-i a {
+    color: #000; }
+  .rbox-i a {
+    color: #000; }
+  .readmore {
+    background-size: 90vw 60px;
+    position: relative;
+    width: auto; }
+  .smiley {
+    background-size: 100px 100px;
+    background-position: center;
+    height: 80px;
+    width: 90vw;
+    margin-top: 40px;
+    margin-bottom: -30px; }
+  .tagcont {
+    margin-top: -30px;
+    width: 90vw; } }
+
+/*iPhone 5 size*/
+@media only screen and (max-width: 320px) {
+  .navcont {
+    font-size: 12px; } }
+
+@media only screen and (min-width: 2000px) {
+  .cardcont {
+    min-height: 40vh; } }
