@@ -198,13 +198,13 @@ body {
   margin: auto;
   border-radius: 4px;
   margin-top: 32px;
-  width: 720px; }
+  max-width: 60%; }
 
 .blogcontainer video {
   margin: auto;
   border-radius: 4px;
   margin-top: 32px;
-  max-width: 75%; }
+  max-width: 60%; }
 
 
 /*.card img {
