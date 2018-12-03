@@ -9,11 +9,19 @@
 
 <body>
 
-  <div id="mySidenav" class="sidenav">
+  <div id="mySidenav" class="sidenav" style="overflow-y:hidden">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="#article">Article</a>
     <a href="#introduction">Introduction</a>
-    <a href="#psychology">Psychology of Motion Perception</a>
+    <button class="dropdown-btn">Psychology of Motion Perception
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="#continuity">Continuity</a>
+      <a href="#causality">Causality</a>
+      <a href="#moving">Moving Frames</a>
+      <a href="#animate">Animate Motion	</a>
+    </div>
     <button class="dropdown-btn">Belief, Presupposition and Expectation
       <i class="fa fa-caret-down"></i>
     </button>
@@ -26,21 +34,21 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-      <a href="#">Disney's 12 Animation Principles</a>
-      <a href="#">Principles of UX Choreography - Rebecca Ussai</a>
-      <a href="#">Bill and Theresa on Transitions on Web</a>
-      <a href="#">Creating Usability with Motion</a>
-      <a href="#">Functional Animation in UX Design</a>
+      <a href="#disney">Disney's 12 Animation Principles</a>
+      <a href="#ux">Principles of UX Choreography - Rebecca Ussai</a>
+      <a href="#bill">Bill and Theresa on Transitions on Web</a>
+      <a href="#creating">Creating Usability with Motion</a>
+      <a href="#functional">Functional Animation in UX Design</a>
     </div>
     <button class="dropdown-btn">Proposed Principles of Transition
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-      <a href="#">Causality</a>
-      <a href="#">Focus</a>
-      <a href="#">Creating Virtual Space</a>
-      <a href="#">System Status</a>
-      <a href="#">Identity</a>
+      <a href="#caus">Causality</a>
+      <a href="#focus">Focus</a>
+      <a href="#virtual">Creating Virtual Space</a>
+      <a href="#system">System Status</a>
+      <a href="#identity">Identity</a>
     </div>
     <a href="#conclusion">Conclusion</a>
     <a href="#references">References</a>
@@ -86,7 +94,7 @@
 </p>
 
 
-<div class="blogtitle2">Psychology of Motion Perception</div>
+<div class="blogtitle2" id="psycho">Psychology of Motion Perception</div>
 <p>When I see an apple using only one of my eye, I perceive an image of the apple, this means one eye produces an image in my mind. Now, when I see the apple through both of my eyes, I perceive only a single image of apple not two distinct images from both of my eyes. This means my mind is pre-processing these images before it reaches my consciousness. Our mind preprocesses the information from all our senses before it reaches our consciousness. This preprocessing has an effect in how we perceive the world.</p>
 <p>In the following sections, we have detailed past experiments in Psychology which are crucial in understanding how our eyes perceives motion. Although this is an active area of research with many unsolved questions, we have listed few experiments which have direct implications in interaction design. These are the areas of motion perception which are relevant to this project:</p>
 <ul>
@@ -95,14 +103,14 @@
 <li>Moving Frames</li>
 <li>Animate Motion</li>
 </ul>
-<div class="blogtitle3">Continuity</div>
+<div class="blogtitle3" id="continuity">Continuity</div>
 <p>Our eyes see everything that is in our visual field. But we do we not perceive a bullet fired from a gun or a golf ball when it is struck by golf club. Although we see our environment continuously with our eyes, we do not perceive the environment as a single continuous event.</p>
 <p>As a simpler case let us consider a series of identical and equally spaced circle moving with different speeds as shown in Figure 1.</p>
 <p>In Figure 1, we can observe that the circles with slower speeds are perceived to move smoothly. This is known as the correspondence problem, our mind merges the series of images to give us illusion of continuous motion. As the speed of pattern is increased, we lose the sense of moving pattern instead we only see unconnected static images.</p>
 <p>"It is reasonable to suppose that there is a central brain mechanism which transfers information registered by senses into temporal sequence"(Marc Wittmann, 2016). Neural oscillations bring about a state in the brain that determines which incoming data counts as temporal phenomenon and which does not. All that is processed within a period of approximately 30ms and is experienced as simultaneous.</p>
 <p>Temporal succession rates may vary across different age groups. Older people have elevated temporal succession rates because their cognition declines with age. Children on other hand can perceive things faster (~10ms temporal succession rate).</p>
 <p>To measure the threshold of temporal succession, Sigmund Exner conducted an experiment in 1875 which consisted of 2 spatially separated electric sparks. By varying the time between the two successive sparks, he could determine the bound of temporal succession. He found out that when the sparks time delay was within 10 ms, both flashes were perceived to be same. As time was increased, people perceived the flashes a moving object. When the time was increased even further, they were perceived to be unconnected events.</p>
-<div class="blogtitle3">Causality</div>
+<div class="blogtitle3" id="causality">Causality</div>
 <p>When we first encounter an object, we cannot infer what it will cause by examining it alone. "if that object be entirely new to [someone], he will not be able, by the most accurate examination of its sensible qualities, to discover any of its causes or effects" (David Hume, 1772). When a child has no experience with fire, he will not be afraid to put his hand into the fire. Once he does put his hand into fire, he experiences heat and will try to avoid putting his hand into fire again.</p>
 <p>In the above scenario there are large number of ideas in the mind for example idea of color, feelings, etc. Let us pick two of them for our investigation: fire and heat. As soon as the child puts his hand inside the fire, he forms an association between the idea of fire and idea of heat. The more he experience this symbiosis between the two, the stronger this association becomes. This is what David Hume calls constant conjunction. One of the way our mind learns about our environment is through causality which is learned by constant conjunction between ideas. Latest research suggests that people are predisposed to understand cause and effect, making inferences bidirectionally. Causal considerations are integral to how people reason about their environment.</p>
 <p>These associations play a major role in temporal events. For example, same event can be perceived differently by varying time. Mochotte (1963) conducted an experiment which shows perception can be radically changed by change in basic parameters such as velocity and event timing. He conducted an experiment using two rectangular patch of light. As he varied the velocities and time of contact between contact of the rectangles, the observers reported different kinds of causal relation between the objects.</p>
@@ -114,7 +122,7 @@
 <p></p><center><video autoplay muted loop><source src="animations/Figure3.mp4" type="video/mp4" ></video></center>
 <div class="imgdesc">When the velocity of blue rectangle is higher than red, triggering is perceived.</div>
 <p>Michottes experiment shows that precise timing is required to achieve desired effect in motion.</p>
-<div class="blogtitle3">Moving Frames</div>
+<div class="blogtitle3" id="moving">Moving Frames</div>
 <p>Hans Wallach Experiment (1959)</p>
 <p>The motion of a surrounded object is heavily influenced by its surrounding object. When an object is surrounded by another object, the surrounding object forms a frame or reference for the inside object implying that our perception of motion works in hierarchical manner.</p>
 <p>As a simple case consider a dot surrounded by a circle in Figure 4. Whenever the dot and/or circle is moved, only the dot is perceived to be moving inside the circle because the circle forms as the frame of reference for the dot.</p>
@@ -125,7 +133,7 @@
 <div class="imgdesc">Blue color shows the direction of actual movement whereas pink color shows direction of perceived movement (right). When the rectangle is moved in the right direction, the dot is perceived to be moving towards left and the rectangle is perceived to be moving towards right. The motion of rectangle is influenced by the circle which encapsulates it.</div>
 <p></p><center><video autoplay muted loop><source src="animations/Figure6.mp4" type="video/mp4" ></video></center>
 <div class="imgdesc">Blue color shows the direction of actual movement whereas pink color shows direction of perceived movement (right)</div>
-<div class="blogtitle3">Animate Motion</div>
+<div class="blogtitle3" id="animate">Animate Motion</div>
 <p>Johannson Experiment (1973)</p>
 <p>We are highly sensitive to motion of biological origin. Gunnar Johansson created films in which light was attached to the limb joint of actors who performed an action. The people could identify the action and presence of a person only by looking at the motion of lights.</p>
 <p>Heider and Simmel Experiment (1944)</p>
@@ -158,7 +166,7 @@
 
 <div class="blogtitle2">Survey of Related Work on Transitions</div>
 <p>Transitions are used almost everywhere in Interaction Design but not much work has been done to understand the transitions itself and what are the best practices while using transitions. I have summarized below major work done on transitions.</p>
-<div class="blogtitle3">Disney's 12 Animation Principles</div>
+<div class="blogtitle3" id="disney">Disney's 12 Animation Principles</div>
 <p>Animation is the illustration of motion. Many transitions used today are inspired by animation industry to enhance the UX. The most famous and widely used animation principles are that from the book 'The Illusion of Life: Disney Animation':</p>
 <ol type="1">
   <li><b>Squash and Stretch:</b> Defining the rigidity or an object by distorting its shape while it progresses through an action.</li>
@@ -174,7 +182,7 @@
   <li><b>Solid Drawing:</b> Taking volume, weight and balance into consideration to achieve effects that character is present in three dimensional space.</li>
   <li><b>Appeal:</b> Appeal is anything that a person likes to see and it attracted to that quality of a character. All character should have an appeal otherwise the user will not be interested in what the character is doing.</li>
 </ol>
-<div class="blogtitle3">Principles of UX Choreography - Rebecca Ussai</div>
+<div class="blogtitle3" id="ux">Principles of UX Choreography - Rebecca Ussai</div>
 <p>Principles of UX Choreography was introduced by Rebecca Ussai in collaboration with Glen Keane. She has proposed four principles of how transitions should be used. These principles 'solve the gap between extreme states and create a more polished experience' (Rebecca, 2015).</p>
 <p><b>Feedback:</b> Making the interface responsive to users' action and is often used to show the outcome of the action - if the action is completed or failed. "It builds trust with your user and it's really satisfying and delightful for the users' to see" (Rebecca, 2015). Exaggeration can be used to create higher emotional impact on the user and make it clear as to what is happening. This principle is related to disney's principle of Exaggeration mentioned in the last section.</p>
 <p></p><center><video width="240px" autoplay muted loop><source src="animations/Figure14.mp4" type="video/mp4" ></video></center>
@@ -187,7 +195,7 @@
 <p><b>User Focus:</b> Guiding users' attention clearly at each stage. Putting emphasis on the elements which are involved in the interaction.</p>
 <p></p><center><video width="240px" autoplay muted loop><source src="animations/Figure17.mp4" type="video/mp4" ></video></center>
 <p><b>Brand tone of Voice:</b> "'If a brand were to speak to us, what would it say?' we also need to start thinking, 'If a brand were to move, what would it feel like?'"  (Rebecca, 2015). People keep using same app again and again when they have more than just good user experience and emotional appeal.</p>
-<div class="blogtitle3">Bill and Theresa on Transitions on Web</div>
+<div class="blogtitle3" id="bill">Bill and Theresa on Transitions on Web</div>
 <p>Bill and Theresa's book Designing Web Interfaces describes the most commonly used transitions in the web. Most of these transitions are easily extendable to other forms of interfaces.</p>
 <ol type="1">
 <li><b>Brighten and Dim:</b> Brightening an area of screen, this can be done by dimming entire application window and exposing the part of interface at normal brightness. How much attention the dimming and brightening will get will be controlled by the speed of color change and the contrast between the dimmed and brightened state. Higher speed of color change leads to higher attention by the user. Bright and dim are useful when (Bill and Theresa, 2009, p. 221):</li>
@@ -240,7 +248,7 @@
 <li>Call attention momentarily to a different part of interface that might normally not be noticed.</li>
 </ol>
 </ol>
-<div class="blogtitle3">Bill and Theresa on Purpose of Transitions</div>
+<p><b><i>Bill and Theresa on Purpose of Transitions</i></b></p>
 <p>Transitions are a means of communication. Henry Marks stated "If you don't have a story, no amount of graphic trickery will make it interesting". Transitions give us a way to:</p>
 <ul>
   <li>Maintain context while changing views</li>
@@ -278,7 +286,7 @@
 <p><b>Create Illusion of Virtual Space</b><br>Through animation, the user feels the intuition of space in the interface. Through animations such as expand/collapse, the user can conceptualize the interface.</p>
 <p></p><center><video width="240px" autoplay muted loop><source src="animations/Figure33.mp4" type="video/mp4" ></video></center>
 <div class="imgdesc">User conceptualises the interface using transition between different layouts.</div>
-<div class="blogtitle3">Creating Usability With Motion: The UX in Motion Manifesto</div>
+<div class="blogtitle3" id="creating">Creating Usability With Motion: The UX in Motion Manifesto</div>
 <p></p><center><video autoplay muted loop><source src="animations/Figure34.mp4" type="video/mp4" ></video></center>
 <p>Issara Willenskomer has written a beautiful article on Medium explaining different types of interactions such as Realtime and Non-Realtime. His principles explains how relationships between objects can be conveyed through motion. He has categorized interaction in the following ways:</p>
 <ul>
@@ -322,7 +330,7 @@
 <div class="imgdesc">Dolly (left) and Zooming (right).</div>
 <p></p><center><video autoplay muted loop><source src="animations/Figure49.mp4" type="video/mp4" ></video></center>
 <div class="imgdesc">Zoom (left) is used to show grouping of photos at deeper level. Dolly(right) is used to show that the lock screen is located behind the home page.</div>
-<div class="blogtitle3">Functional Animation in UX Design</div>
+<div class="blogtitle3" id="functional">Functional Animation in UX Design</div>
 <p>Amit Dailot has written blog on functional animations and their purpose. Functional animation are animations with clear logical purpose. They serve the design by supporting the solution of the application. Amit has listed out frw principles for functional animation (Amit, 2015):</p>
 <p><b>Orientation:</b>"Maintain the user’s sense of orientation and to help the user comprehend the change that has just happened in the page’s layout, what has triggered the change and how to initiate the change again later on if needed"(Amit, 2015). Its logical purpose it to avoid a surprising transition and orient the user.</p>
 <p></p><center><video width="240px" autoplay muted loop><source src="animations/Figure50.mp4" type="video/mp4" ></video></center>
@@ -357,7 +365,7 @@
 <li>System Status</li>
 <li>Identity</li>
 </ul>
-<div class="blogtitle3">Causality</div>
+<div class="blogtitle3" id="caus">Causality</div>
 <p>We have talked about how causality is a universal expectation. The user expects events to happen in causal manner. By enforcing causal relation between events and the elements, the interface can be made natural and intuitive.</p>
 <p><b>Feedback</b><br><i>Responding to the users' input.</i></p>
 <p>We want the to make the interface reactive to the user to give him a feeling that the device is "listening to him". On  receiving  a feedback, the user feels confident that his action is registered by the device. </p>
@@ -371,7 +379,7 @@
 <p><b>Relationship Between Elements</b><br><i>How visually different elements are tied together</i></p>
 <p>When we observe different objects inter-related with cause and effect relationship, we begin to associate both of them as one single entity. On continuous such observations, our perception of such associations becomes stronger.</p>
 <p>By using transitions, we can enforce this cause and effect relationship between elements to associate them with each other. As shown in Figure 65, when icon for the browser is pressed, the user observes transition between the icon and the browser window. By observing this transitions multiple times between the icon and the browser window, the user begins to conceptualize both the icon and the browser screen as a single entity.</p>
-<div class="blogtitle3">Focus</div>
+<div class="blogtitle3" id="focus">Focus</div>
 <p>Helping the user to focus only on the elements he requires to interact with at a given time. This can be done in a number of ways:</p>
 <p><b>Bright and Dim</b><br>Brightening the area of interest in the screen. Since it is not possible to increase the brightness of the screen that is available, the remaining elements can be dimmed while keeping the area of interest at normal brightness.</p>
 <p><b>Obscuration</b><br>Keeping the essential elements as they are while obscuring the remaining elements. This helps designers to enable focus on few elements without having to create a new window for them.</p>
@@ -383,7 +391,7 @@
 <li>Indicate that a part of the interface is not ready to be interacted with, for instance when an application is loading. (Bill and Theresa, 2009)</li>
 <li>Show important events on the screen through motion (Amit, 2015). For example in Figure 69, addition of the product to the card is highlighted by transition of green circle.</li>
 </ul>
-<div class="blogtitle3">Creating Virtual Space</div>
+<div class="blogtitle3" id="virtual">Creating Virtual Space</div>
 <p>Transitions can help in designing the navigation of the UI. The skeleton of the interface can be defined by adding transitions in between states. These transitions are governed by the pre-defined rules of navigation design. They are consistent throughout the interface.</p>
 <p><b>Dimensionality</b><br><i>Providing 3D object attributes to the interface</i></p>
 <p>"Providing spatial origin and departure references help reinforce mental models of where the users' are in UX" (Issara Willenskomer). Dimensionality can be of three types:</p>
@@ -419,7 +427,7 @@
   <li>Provide details about an item in a list.</li>
 </ol>
 </ul>
-<div class="blogtitle3">System Status</div>
+<div class="blogtitle3" id="system">System Status</div>
 <p><i>Notifying the user about the system</i></p>
 <p>Notifying the user about the changes in the interface. These transitions are triggered only on specific events. Unlike, the transitions in 'Creating Virtual Space' they need not follow rules of the interface.</p>
 <p><b>Improve Perceived Performance</b><br>When a long process is running, it is better to divert the users' attention towards something else. Transitions make time to be perceived faster because the user remains engaged throughout the process. User testing has confirmed that transitions improve the perceived performance of an operation.</p>
@@ -439,19 +447,19 @@
 <p></p><center><video autoplay muted loop><source src="animations/Figure93.mp4" type="video/mp4" ></video></center>
 <li>Drop Animation: When an object is drag and dropped in an area, it automatically positions and scales itself.</li>
 </ul>
-<div class="blogtitle3">Identity</div>
+<div class="blogtitle3" id="identity">Identity</div>
 <p><i>“If a brand were to speak to us, what would it say?” we also need to start thinking, “If a brand were to move, what would it feel like?” </i>- Rebecca Ussai</p>
 <p>People use the application again and again when it has good user experience. A brand can use animations to define their unique signature which gives the user an emotional appeal for the application.</p>
 <p>
 </p>
 
 
-<div class="blogtitle2">Conclusion</div>
+<div class="blogtitle2" id="conclusion">Conclusion</div>
 <p>In this project, we have proposed a new set of principles of transitions based on the meaning it conveys to the user. Our proposed principles gives designers the ability to choose which kind of transitions they want to use depending on what they want to convey to the user. We hope this project will inspire others to explore and investigate further.</p>
 <p>
 </p>
 
-<div class="blogtitle2">REFERENCES</div>
+<div class="blogtitle2" id="references">REFERENCES</div>
 <p>Bill Scott & Theresa Neil (2002), Designing Web Interfaces, 234.</br>
 Marc Wittmann (2016), Felt Time The Psychology of How We Perceive Time, Chapter 2.</br>
 Johansson, G. (1973). Visual perception of biological motion and a model for its analysis. Perception and Psychophysics 14(2): 201–211.</br>
