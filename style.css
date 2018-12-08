@@ -204,7 +204,7 @@ body {
   margin: auto;
   border-radius: 4px;
   margin-top: 32px;
-  max-width: 60%; }
+  max-width: 68%; }
 
 
 /*.card img {
@@ -545,7 +545,7 @@ hr {
     margin: auto;
     border-radius: 0px; }
   .blogcontainer video {
-    /*width: 100%;*/
+    width: 90%;
     margin: auto;
     border-radius: 0px; }
   .blogtitle {
